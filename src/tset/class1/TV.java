@@ -12,11 +12,7 @@ public class TV {
 		return color;
 	}
 
-	@Override
-	public String toString() {
-		return "TV [color=" + color + ", producer=" + producer + ", size=" + size + ", channel=" + channel + ", volume="
-				+ volume + "]";
-	}
+	
 
 	public String getProducer() {
 		return producer;
@@ -72,5 +68,10 @@ public class TV {
 	public void downVolume() {
 		volume--;
 		System.out.println("ÇöÀç º¼·ý: "+volume);
+	}
+	@Override
+	public String toString() {
+		return "TV [color=" + color + ", producer=" + producer + ", size=" + size + ", channel=" + channel + ", volume="
+				+ volume + "]";
 	}
 }
